@@ -4,7 +4,20 @@
   padding: 2rem;
   text-align: center;
 }
-
+body{
+  height: 96vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+  background: blue;
+  
+}
+.box1{
+  width: 60vw;
+  height: 50vh;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
