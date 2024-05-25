@@ -9,14 +9,48 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #101820FF;
 }
-.number{
-  background: blue;
-  
+.number {
+  background: #F2AA4CFF;
+  width: 294px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 165px  ;
 }
-.box1{
-  width: 60vw;
-  height: 50vh;
+.num{
+  height: 95%;
+  width: 24%;
+  border-radius: 2px solid #F2AA4CFF;
+  background:  #101820FF;
+  color: #F2AA4CFF;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.button{
+  margin: 100px 0px;
+  background-color: #F2AA4CFF;
+  font-size: 20px;
+  font-weight: bolder;
+}
+h2{
+  text-align: center;
+  font-size: 45px;
+  color: #F2AA4CFF;
+  padding: 30px 0px;
+}
+.box1 {
+  width: 41vw;
+  height: 62vh;
+  background: rgb(14, 17, 19);
+  border-radius: 20px;
+  box-shadow: 2px 2px 19px;
 }
 .logo {
   height: 6em;
