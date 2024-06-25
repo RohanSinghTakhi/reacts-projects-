@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-function List(){
-    return(
-        <>
-        <ul className="list-group ">
-        <li className="list-group-item d-flex justify-content-between    ">
-            <label className="form-check-label" for="firstCheckbox">First checkbox</label>
-            <label className="form-check-label" for="firstCheckbox">time</label>
-            <input className="form-check-input me-1" type="checkbox" value="" id="firstCheckbox"></input>
-    
-        </li>
-        </ul>
-        </>
-    )
+function List({ items }) {
+    return (
+        <div>
+            <ul className="list-group">
+                {items.map((item, index) => (
+                    <li key={index} className="list-group-item d-flex justify-content-between">
+                        <label className="form-check-label" htmlFor={`checkbox${index}`}>{item}</label>
+                        <label className="form-check-label" htmlFor={`checkbox${index}`}>time</label>
+                        <input className="form-check-input me-1" type="checkbox" id={`checkbox${index}`} />
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
-export default List
+export default List;
