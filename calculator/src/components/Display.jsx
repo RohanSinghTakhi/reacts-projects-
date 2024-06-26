@@ -1,10 +1,21 @@
-import styles from '../App.module.css'
-function Display(){
-    return(
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from '../App.module.css';
+
+function Display({ val }) {
+    return (
         <>
-        <input type="text" className={styles.display} />
+            <input type="text" className={styles.display} readOnly value={val} />
         </>
-    )
+    );
 }
 
-export default Display
+Display.propTypes = {
+    val: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+};
+
+Display.defaultProps = {
+    val: '',
+};
+
+export default Display;
