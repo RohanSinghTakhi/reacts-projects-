@@ -1,19 +1,14 @@
 import React from 'react';
 
-function Layout() {
+function Layout({ otp }) {
   return (
     <div>
-      
-      
       <div className="number">
-        <div className="num">0</div>
-        <div className="num">0</div>
-        <div className="num">0</div>
-        <div className="num">0</div>
+        {otp.map((digit, index) => (
+          <div key={index} className="num">{digit}</div>
+        ))}
       </div>
-        
-      </div>
-    
+    </div>
   );
 }
 

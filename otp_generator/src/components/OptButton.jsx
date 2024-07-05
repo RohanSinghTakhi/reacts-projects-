@@ -1,10 +1,10 @@
 import React from 'react'
 
-function OptButton() {
+function OptButton({inc,res}) {
   return (
     <div className='button2'>
-      <button className='button' type="button">Generate</button>
-      <button className='button' type="button">  reset  </button>
+      <button className='button' type="button" onClick={inc}>Generate</button>
+      <button className='button' type="button" onClick={res}>  reset  </button>
     </div>
       
   )
