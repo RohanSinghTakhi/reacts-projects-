@@ -64,6 +64,16 @@ h2{
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.button{
+  margin-left:  9px;
+  margin-right: 4px;
+}
 
 @keyframes logo-spin {
   from {
